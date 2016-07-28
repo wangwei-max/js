@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+ <img src="image/icon_01.png">
+ <input value="helloword">
+<script>
+    var img = document.getElementsByTagName('img')[0];
+    img.onmousemove = function (){
+        console.log('111111');
+    }
+    img.onmouseover = function (){
+        console.log('over');
+    }
+    img.onmouseout = function (){
+        console.log('out');
+    }
+
+    var input = document.getElementsByTagName("input")[0];
+    input.onfocus = function(){
+        input.style.outline = 'none';
+//        input.style.width = '300px';
+//        input.style.height = '300px';
+    }
+    input.onselect = function(){
+        input.value ='red';
+    }
+</script>
+</body>
+</html>
