@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script >
+        var number = 10
+        var money = 100.99
+        var name = 'jack'
+            name2 = 'rouse'
+        var result = true;
+        var num =null
+        console.log(number,money,name,result);
+        console.log(typeof number,typeof money,typeof name,typeof result,typeof num);
+
+        var newName = number+name + name2;
+        console.log(typeof newName);
+        var numbers =[num,10,'hh',result,newName,['rrr',10]];
+        console.log(numbers);
+        console.log(numbers[5][0]);
+
+////       函数
+//        function sum(a,b)
+//        {
+//            return a+b;
+//        }
+////        var  result = sum(3,4);
+//        console.log(result)
+
+//        万能加法函数
+//        function sum(numbers)
+//        {
+//            var  count = 0;
+//            for(var i=0;i<numbers.length;i++)
+//            {
+//                count = count+numbers[i];
+//            }
+//            return count;
+//        }
+//
+//        var arr = [10,20,30];
+//        var result = sum(arr);
+//        console.log(result);
+
+        function sum()
+        {
+            var  count = 0;
+            for(var i=0;i<arguments.length;i++)
+            {
+                count = count+arguments[i];
+            }
+            return count;
+        }
+
+//        匿名函数
+        var result = function(){
+            console.log('ewwewewe');
+        }
+        result();
+    </script>
+</body>
+</html>

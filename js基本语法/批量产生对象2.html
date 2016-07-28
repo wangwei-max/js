@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    var Dog = function(){
+//        this.name = null;
+//        this.height = null;
+//        this.age = null;
+//        this.eat = function(meat){
+//            console.log(this.name+'-----eat'+meat);
+//        };
+//        this.run = function(){
+//            console.log(this.name + '-----run'+meat);
+//        }
+//    };
+
+//    var dog1 = new Dog();
+//    dog1.name = 'wangcai';
+//    dog1.height = 1.55;
+//    dog1.eat('五花肉')
+//    var dog2 = new Dog();
+//    dog2.height = 1.00;
+//    dog2.name = 'lulu';
+//    dog2.eat('红烧');
+//    console.log(dog1,dog2);
+
+var Dog = function(name,height,age){
+    this.name = name;
+    this.height = height;
+    this.age = age;
+    this.eat = function(meat){
+        console.log(this.name+'-----eat'+meat);
+    };
+    this.run = function(){
+        console.log(this.name + '-----run'+meat);
+    }
+};
+    var dog1 = new Dog('dog1',1.55,15);
+    var dog2 = new Dog('dog1',2,20);
+    console.log(dog1,dog2);
+</script>
+</body>
+</html>

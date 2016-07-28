@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var dog = {
+            name : 'dong1',
+            height:1.55,
+            age : 15,
+            freiend :['dong2','dong3'],
+            run:function(){
+                console.log('runrunrun')
+            },
+            eat:function(meat){
+                console.log(this.name + 'eateateat'+meat)
+            }
+        }
+//        for(var name in dog){
+//            console.log(name,dog[name]);
+//        }
+        dog.eat('wuhuasrtou');
+
+    </script>
+</body>
+</html>
