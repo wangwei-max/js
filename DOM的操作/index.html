@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+</head>
+<body>
+<img class="icon" src="image/icon_01.png">
+<p></p>
+<button class="pre" onclick="pre()">pre</button>
+<button class="next" onclick="next()">next</button>
+    <!--<script src="JS/index.js"></script>-->
+<script type="text/javascript">
+    var img = document.getElementsByClassName('icon')[0];
+//    var prebtn = document.getElementsByClassName('pre')[0];
+//    var nextbtn = document.getElementsByClassName('next')[0];
+    var maxImgCount = 9;
+    var minImgCount = 1;
+    var currentImg = minImgCount;
+    function pre(){
+       if(currentImg == minImgCount){
+            currentImg =maxImgCount;
+        }
+        else{
+           currentImg = currentImg-1;
+       }
+        img.src = "image/icon_0"+currentImg+".png";
+    }
+    function next(){
+        if(currentImg == maxImgCount){
+            currentImg =minImgCount;
+        }
+        else{
+            currentImg +=1;
+        }
+        img.src = "image/icon_0"+currentImg+".png";
+
+    }
+</script>
+</body>
+</html>

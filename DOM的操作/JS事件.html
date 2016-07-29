@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div1">background</div>
+    <script type="text/javascript">
+//        window.onload = function(){
+//
+//        }
+//        window.onunload = function(){
+//
+//        }
+
+        var div = document.getElementsByClassName('div1')[0];
+        console.log(div.style);
+        div.onmousedown = function(){
+                div.style.background = 'green';
+        }
+        div.onmouseup = function(){
+            div.style.backgroundImage = 'url("image/img_03.jpg")';
+        }
+    </script>
+</body>
+</html>
