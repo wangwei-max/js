@@ -10,7 +10,7 @@ window.onload = function(){
     var divs =$('content').getElementsByTagName('div');
 //    判断
     if(titles.length !=divs.length) return;
-    
+
     for(var i = 0;i<titles.length;i++ ){
         var li =  titles[i];
         li.id = i;
